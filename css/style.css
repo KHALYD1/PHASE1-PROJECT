@@ -1,45 +1,103 @@
+/* Global styles */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-color: #f1c40f;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-}
-
-h1 {
-	margin: 0;
-	font-size: 36px;
-}
-
-main {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-.menu-item {
-	display: flex;
-	flex-direction: row;
-	margin: 10px 0;
-}
-
-.menu-item img {
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	margin-right: 20px;
-}
-
-.menu-item h2 {
-	font-size: 24px;
-	margin: 0;
-}
-
-.menu-item p {
-	margin: 0;
-}
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+  
+  header {
+    background-color: #28a745;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  main {
+    padding: 16px;
+  }
+  
+  .quran-container {
+    display: flex;
+  }
+  
+  .chapter-list-container {
+    width: 25%;
+    background-color: #f2f2f2;
+    height: 100vh;
+    overflow: auto;
+    padding: 16px;
+  }
+  
+  .chapter-list-container h2 {
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+  
+  .chapter-list-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chapter-list-container li {
+    margin: 0;
+  }
+  
+  .chapter-list-container a {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chapter-list-container a:last-child {
+    border-bottom: none;
+  }
+  
+  .chapter-list-container a.active {
+    font-weight: bold;
+    background-color: #d4edda;
+    border-left: 4px solid #28a745;
+  }
+  
+  .quran-text-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 16px;
+    overflow: auto;
+  }
+  
+  .quran-text-container h2 {
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+  
+  .quran-text-container .quran-chapter {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  .quran-text-container .quran-chapter p {
+    margin: 0;
+  }
+  
+  .quran-text-container .quran-chapter span {
+    font-weight: bold;
+  }
+  
+  
+  

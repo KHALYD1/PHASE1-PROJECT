@@ -1,18 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>PHASE ONE PROJECT</title>
-	<link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <title>Quran App</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<header>
-		<h1>Random Fruit Menu</h1>
-	</header>
-	<main>
-		<div id="menu-container">
-		</div>
-	</main>
-	<script src="./js/index.js" defer></script>
+  <header>
+    <h1>Quran App</h1>
+  </header>
+  
+  <main>
+    <div class="quran-container">
+      <div class="chapter-list-container">
+        <h2>Chapters</h2>
+        <ul class="chapter-list">
+          <!-- Chapter links will be added here dynamically -->
+          <style>
+            ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+            }
+      
+            li {
+              margin: 10px;
+              padding: 10px;
+              background-color: #f2f2f2;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+            }
+      
+            li:hover {
+              background-color: #e6e6e6;
+            }
+      
+            li.active {
+              background-color: #007bff;
+              color: #fff;
+            }
+          </style>
+        </ul>
+      </div>
+      <div class="quran-text-container">
+        <h2 id="chapter-title"></h2>
+        <div class="quran-chapter" id="quran-chapter">
+          <!-- Quran text for the selected chapter will be added here dynamically -->
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Quran App</p>
+  </footer>
+  
+  <script src="./js/index.js"></script>
 </body>
 </html>
