@@ -14,10 +14,11 @@ h2 {
   font-size: 95px;
   margin: 0;
   text-decoration: underline;
+  color: white;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
