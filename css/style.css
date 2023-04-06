@@ -1,5 +1,5 @@
 header {
-  background-color: turquoise;
+  background-color: lightgray;
   color: #fff;
   padding: 16px;
   text-align: center;
@@ -13,6 +13,7 @@ header h1 {
 h2 {
   font-size: 95px;
   margin: 0;
+  text-decoration: underline;
 }
 
 a {
