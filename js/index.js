@@ -14,7 +14,7 @@ function fetchChapterList() {
       const chapters = data.data;
       chapters.forEach(chapter => {
         const link = document.createElement('a');
-        // link.href = `#${chapter.number}`;
+        link.href = `#${chapter.number}`;
         link.innerText = `${chapter.number}. ${chapter.englishName} (${chapter.name})`;
         link.addEventListener('click',() => fetchQuranText(chapter.number)) 
         chapterList.appendChild(link);
@@ -36,6 +36,8 @@ function fetchQuranText(chapter) {
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
+     
 }
+
 
 fetchChapterList();
