@@ -1,8 +1,9 @@
 header {
   background-color: lightgray;
-  color: #fff;
+  color: black;
   padding: 16px;
   text-align: center;
+  text-decoration: solid;
 }
 
 header h1 {
