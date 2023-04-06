@@ -1,9 +1,10 @@
 header {
-  background-color: lightgray;
+  background-color: darkgrey;
   color: black;
   padding: 16px;
   text-align: center;
   text-decoration: solid;
+  background-blend-mode: color-burn;
 }
 
 header h1 {
